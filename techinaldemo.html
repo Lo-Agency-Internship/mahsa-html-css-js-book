@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical document</title>
+    <style>
+
+
+        .title-wrapper {
+            
+            float:left;
+            border-top:4px solid lightgrey;
+            width:36%;;
+            height:100vh;
+            margin:0;
+            
+        }
+        .definition-wrapper{
+        
+            float:right;
+            width:60%;
+            border:3px solid lightgrey;
+            padding:15px;
+            
+
+        }
+        .row{
+            border-bottom:3px solid black;
+            background-color: rgb(240, 163, 199);
+            padding:15px;
+            
+
+        }
+        .title-wrapper a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration:none;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    </div>
+    <div class="title-wrapper">
+        <h3>HTML Documentation</h3>
+        <header class="row"><a href="#html">1.what is html?</a></header>
+        <header class="row"><a href="#basic-structure">2.What is a basic structure of an HTML document?</a></header>
+        <header class="row"><a href="#html-element">3.what are html elements?</a></header>
+        <header class="row"><a href="#body-tag">4.body tag</a></header>
+        <header class="row" ><a href="#list-tag">5.List tag</a></header>
+        <header class="row"><a href="#image-tag">6.Image tag</a></header>
+        <header class="row"><a href="#form-tag">7.Form tag</a></header>
+        
+
+    </div>
+
+    <div class="definition-wrapper">
+        <h3 id="html">what is html?</h3>
+        <p>
+            The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
+            It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+            Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. 
+            HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+
+            HTML elements are the building blocks of HTML pages. With HTML constructs, images and other
+             objects such as interactive forms may be embedded into the rendered page. HTML provides a means 
+             to create structured documents by denoting structural semantics for text 
+             such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. 
+             Tags such as img tag and input tag directly introduce content into the page. Other tags such as <p> surround and provide information about
+             document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page.
+            HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. T
+        </p>
+        <h3 id="basic-structure">what is basic structure of HTML</h3>
+        <p>HTML markup consists of several key components, including those called tags (and their attributes),
+             character-based data types, character references and entity references. HTML tags most commonly come in pairs like
+             &#60;h1&#62; and &#60;/h1&#62;, although some represent empty elements and so are unpaired, for example <img>. The first tag in such 
+             pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).
+            <code>
+                <!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>This is a title</title>
+                            </head>
+                            <body>
+                                <div>
+                                    <p>Hello world!</p>
+                                </div>
+                            </body>
+                            </html>
+            </code>
+             The text between html tag describes the web page, and the text between
+              body tag is the visible page content. The markup text title tag.
+              This is a title tag defines the browser page title shown on browser tabs
+            and window titles, and the tag div tag defines a division of the page used for
+            easy styling. Between head tag, a meta tag element can be used to define webpage metadata.
+            The Document Type Declaration DOCType tag is for HTML5. If a declaration 
+            is not included,various browsers will revert to "quirks mode" for rendering.
+             
+
+        </p>
+
+        <h3 id="html-element" >what are html elements?</h3>
+        <p>
+            HTML documents imply a structure of nested HTML elements. These are
+             indicated in the document by HTML tags, enclosed in angle brackets thus
+             p tag.In the simple, general case,the extent of an element is indicated by a 
+            pair of tags.The text content of the element, if any, is placed between these tags.
+            Tags may also enclose further tag markup between the start and end, 
+            including a mixture of tags and text. This indicates further (nested)
+            elements, as children of the parent element.
+            The start tag may also include element's attributes within the tag.
+             These indicate other information, such as identifiers for sections within the document, identifiers used to bind style information to the presentation of the document
+        </p>
+
+        <h3 id="body-tag">Body tag</h3>
+        <p>
+            Definition and Usage. The body tag defines the document's body. The body element contains
+            all the contents of an HTML document, such as headings, paragraphs,images, hyperlinks,
+            tables, lists, etc. Note: There can only be one body element in an HTML document.
+            This elemnet include global attribute like alinke,background,bgcolor.
+        </p>
+        <h3 id="list-tag">List tag</h3>
+        <p>
+            The &#60;li&#62; HTML element is used to represent an item in a list. It must be
+            contained in a parent element: an ordered list (&#60;ol&#62;), an unordered 
+            list (&#60;ul&#62;), or a menu (&#60;menue&#62;). In menus and unordered lists, list items are
+             usually displayed using bullet points. In ordered lists, they are usually 
+             displayed with an ascending counter on the left, such as a number or letter.
+             this element include value,type.
+        </p>
+        <h3 id="image-tag">img tag</h3>
+        <p>
+            The <img> tag is used to embed an image in an HTML page.
+
+            Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+        <ul>
+            The <img> tag has two required attributes:
+
+           <li> src - Specifies the path to the image</li>
+            <li>    alt - Specifies an alternate text for the image, if the image for some
+            reason cannot be displayed.</li>
+        </ul>
+
+        Note:always specify the width and height of an image.
+         If width and height are not specified, the page might flicker while the image loads.
+        </p>
+        <h3 id="form-tag">Form tag</h3>
+        <p>
+            The HTML &#60;form &#62; element provide a document section to take input from user.
+             It provides various interactive controls for submitting information to web 
+             server such as text field, text area, password field, etc.
+             The &#60;form &#62; element is a container for different types of input elements,
+             such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+ 
+        </p>
+        
+
+        
+
+
+    </div>
+</body>
+</html>
