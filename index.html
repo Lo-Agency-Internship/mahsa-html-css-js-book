@@ -5,58 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical document</title>
-    <style>
-
-
-        .title-wrapper {
-            
-            float:left;
-            border-top:4px solid lightgrey;
-            width:36%;;
-            height:100vh;
-            margin:0;
-            
-        }
-        .definition-wrapper{
-        
-            float:right;
-            width:60%;
-            border:3px solid lightgrey;
-            padding:15px;
-            
-
-        }
-        .row{
-            border-bottom:3px solid black;
-            background-color: rgb(240, 163, 199);
-            padding:15px;
-            
-
-        }
-        .title-wrapper a {
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration:none;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <h3>HTML Documentation</h3>
     
-    </div>
-    <div class="title-wrapper">
-        <h3>HTML Documentation</h3>
-        <header class="row"><a href="#html">1.what is html?</a></header>
-        <header class="row"><a href="#basic-structure">2.What is a basic structure of an HTML document?</a></header>
-        <header class="row"><a href="#html-element">3.what are html elements?</a></header>
-        <header class="row"><a href="#body-tag">4.body tag</a></header>
-        <header class="row" ><a href="#list-tag">5.List tag</a></header>
-        <header class="row"><a href="#image-tag">6.Image tag</a></header>
-        <header class="row"><a href="#form-tag">7.Form tag</a></header>
-        
+    <div class="flex-container">
+        <div class="title-wrapper">
+            <ul>
+                <li><a href="#html">1.what is html?</a></li>
+                <li><a href="#basic-structure">2.basic structure of HTML?</a></li>
+                <li><a href="#html-element">3.what are html elements?</a></li>
+                <li><a href="#body-tag">4.body tag</a></li>
+                <li><a href="#list-tag">5.List tag</a></li>
+                <li><a href="#image-tag">6.Image tag</a></li>
+                <li><a href="#form-tag">7.Form tag</a></li>
+            </ul>
+        </div>
 
-    </div>
-
-    <div class="definition-wrapper">
+        <div class="definition-wrapper">
         <h3 id="html">what is html?</h3>
         <p>
             The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
@@ -78,19 +46,7 @@
              character-based data types, character references and entity references. HTML tags most commonly come in pairs like
              &#60;h1&#62; and &#60;/h1&#62;, although some represent empty elements and so are unpaired, for example <img>. The first tag in such 
              pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).
-            <code>
-                <!DOCTYPE html>
-                            <html>
-                            <head>
-                                <title>This is a title</title>
-                            </head>
-                            <body>
-                                <div>
-                                    <p>Hello world!</p>
-                                </div>
-                            </body>
-                            </html>
-            </code>
+            
              The text between html tag describes the web page, and the text between
               body tag is the visible page content. The markup text title tag.
               This is a title tag defines the browser page title shown on browser tabs
@@ -157,11 +113,8 @@
 
  
         </p>
-        
 
-        
-
-
+        </div>
     </div>
 </body>
 </html>
